@@ -1,0 +1,664 @@
+[
+  {
+    "id": "TC001",
+    "title": "Request a ride from Transportation page to Contact",
+    "description": "Verifies a visitor can use the Transportation page CTA to reach the Contact page to request a ride.",
+    "category": "Transportation Page (NEMT)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /transportation"
+      },
+      {
+        "type": "action",
+        "description": "Click the request-a-ride call to action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Contact page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Navigate to About from header navigation",
+    "description": "Verifies a visitor can use the header navigation to reach the About page and the About content renders.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the header navigation link for About"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the About page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the brand story and core values content is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Reach Contact from Services primary CTA",
+    "description": "Verifies that a visitor can use the Services page primary CTA to reach the Contact page to start an inquiry.",
+    "category": "Services Listing Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Click the Speak with a Care Expert CTA"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the inquiry form is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Navigate to About from footer Quick Links",
+    "description": "Verifies a visitor can reach the About page from the footer Quick Links without landing on an incorrect route.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the About quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the About page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Navigate to Services from header navigation",
+    "description": "Verifies a visitor can use the header navigation to reach the Services listing page and service cards render.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the header navigation link for Services"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Services page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the services listing cards are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Complete contact inquiry fields without submission side effects",
+    "description": "Verifies that a visitor can fill all inquiry fields and clicking Submit does not navigate away or display success/error states since the form is UI-only.",
+    "category": "Contact Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill John into the first name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill Smith into the last name field"
+      },
+      {
+        "type": "action",
+        "description": "Fill 5551234567 into the phone number field"
+      },
+      {
+        "type": "action",
+        "description": "Fill john.smith@example.com into the email address field"
+      },
+      {
+        "type": "action",
+        "description": "Select a service option from the service dropdown"
+      },
+      {
+        "type": "action",
+        "description": "Fill Interested in details and next steps into the message field"
+      },
+      {
+        "type": "action",
+        "description": "Click the Submit Inquiry button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user remains on the contact page with the form still displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no success or error confirmation state is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Navigate to Contact from footer Quick Links",
+    "description": "Verifies a visitor can reach the Contact page from the footer Quick Links.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the Contact quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Contact page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Mobile hamburger menu navigation to Contact closes menu",
+    "description": "Verifies a visitor on a mobile viewport can open the hamburger menu, navigate to Contact, and the menu closes after navigation.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Resize the viewport to a mobile size"
+      },
+      {
+        "type": "action",
+        "description": "Click the hamburger menu icon to open the mobile menu"
+      },
+      {
+        "type": "action",
+        "description": "Click the mobile menu navigation link for Contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mobile menu is closed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Speak with a coordinator from About page to Contact",
+    "description": "Verifies a visitor can use the About page CTA to reach the Contact page to start a conversation.",
+    "category": "About Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Click the speak-with-a-coordinator call to action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Contact page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Use Services page CTA to reach Contact",
+    "description": "Verifies a visitor can move from the Services page to the Contact page using the primary Services CTA.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary call-to-action to speak with a care expert"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the inquiry form is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Navigate to Services from footer Quick Links",
+    "description": "Verifies a visitor can reach the Services listing page from the footer Quick Links.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the Our Services quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Services page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Navigate to Transportation from footer Quick Links",
+    "description": "Verifies a visitor can reach the Transportation page from the footer Quick Links.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the Transportation quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Transportation page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Browse services overview and see all service options",
+    "description": "Verifies that a visitor can open the Services page and see all four service cards with their associated benefit tags displayed.",
+    "category": "Services Listing Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the services section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all four service cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each service card displays benefit tags"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Navigate to FAQ from footer Quick Links",
+    "description": "Verifies a visitor can reach the FAQ page from the footer Quick Links.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the FAQ quick link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the FAQ page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Open Companion Care details from Services",
+    "description": "Verifies that a visitor can open the Companion Care service details from the Services listing and the detail page renders content.",
+    "category": "Services Listing Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Click the View Details action for the Companion Care service card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Companion Care service detail page content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page does not show a not-found or empty-state experience"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Filter FAQs by Care Services category",
+    "description": "Verifies that a visitor can switch to the Care Services category and the FAQ list updates to show Care Services questions.",
+    "category": "FAQ Accordion with Category Filter",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /faq"
+      },
+      {
+        "type": "action",
+        "description": "Select the Care Services category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ list updates to show Care Services questions"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the previously shown category questions are no longer displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Keep multiple FAQ answers open simultaneously",
+    "description": "Verifies that a visitor can open multiple FAQ items at the same time and previously opened answers remain expanded.",
+    "category": "FAQ Accordion with Category Filter",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /faq"
+      },
+      {
+        "type": "action",
+        "description": "Click the first FAQ question in the list"
+      },
+      {
+        "type": "action",
+        "description": "Click a different FAQ question in the list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify multiple FAQ answers are visible at the same time"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify opening a new answer does not collapse an unrelated open answer"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Navigate to Services from footer Core Services links",
+    "description": "Verifies a visitor can use a Core Services link in the footer to reach the Services listing page.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /services"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click a Core Services link in the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the Services page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "View safety features content on Transportation page",
+    "description": "Verifies a visitor can view the safety messaging and feature cards on the Transportation page without missing content.",
+    "category": "Transportation Page (NEMT)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /transportation"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the safety features section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify safety feature cards are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC020",
+    "title": "Expand and collapse a single FAQ answer",
+    "description": "Verifies that a visitor can expand an FAQ item to read the answer and then collapse it again.",
+    "category": "FAQ Accordion with Category Filter",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /faq"
+      },
+      {
+        "type": "action",
+        "description": "Click the first FAQ question in the list"
+      },
+      {
+        "type": "action",
+        "description": "Click the same FAQ question again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ answer is not visible after collapsing"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the FAQ list remains displayed and usable"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC021",
+    "title": "View journey types content on Transportation page",
+    "description": "Verifies a visitor can view the journey types grid and ride descriptions on the Transportation page.",
+    "category": "Transportation Page (NEMT)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /transportation"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the journey types section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify journey type descriptions are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC022",
+    "title": "Use footer logo to return to homepage",
+    "description": "Verifies a visitor can scroll to the footer and use the footer logo to return to the homepage successfully.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the logo in the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the homepage"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Navbar glass effect appears after scrolling on homepage",
+    "description": "Verifies the header visually switches to the scrolled glass state after the visitor scrolls the homepage.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the navbar glass effect is visible in the scrolled state"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "View mission and story content on About page",
+    "description": "Verifies a visitor can view the organization story and mission content on the About page.",
+    "category": "About Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the mission section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify mission and story content is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC025",
+    "title": "View core values cards on About page",
+    "description": "Verifies a visitor can view the core values cards on the About page.",
+    "category": "About Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the core values section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify core values cards are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC026",
+    "title": "Open phone link from footer contact details",
+    "description": "Verifies a visitor can click the phone number link in the footer and the browser attempts to open a phone-dial action.",
+    "category": "Footer Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer"
+      },
+      {
+        "type": "action",
+        "description": "Click the phone number link in the footer"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a phone-dial action is initiated"
+      }
+    ],
+    "priority": "Low"
+  }
+]
